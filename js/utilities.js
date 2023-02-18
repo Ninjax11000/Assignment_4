@@ -8,22 +8,7 @@ function rectangleParelleogram(w,l)
     return w*l;
 }
 
-function inputValidation(val)
-{
-    if(isNaN(val)) {
-        alert("please insert positive integer");
-        return false;
 
-    }
-     else {
-        
-        if(val<=0) {
-            alert("please insert positive integer");
-            return false;
-        }
-        else return true;
-     }
-}
 
 function createList(name,val)
 {
@@ -40,43 +25,56 @@ function getInputBase()
     let base=b.value;
     console.log(base);
     base=parseFloat(base);
-//     if(isNaN(base)) {
-//         alert("please insert positive integer");
-//         return 0;
+    if(isNaN(base)) {
+        alert("please insert positive integer");
+        return 0;
 
-//     }
-//      else {
+    }
+     else {
         
-//         if(base<=0) {
-//             alert("please insert positive integer");
-//             return 0;
-//         }
-//         else return base;
-//      }
-        let check=inputValidation(base);
-        if (check===false) return 0;
+        if(base<=0) {
+            alert("please insert positive integer");
+            return 0;
+        }
         else return base;
+     }
+}
 
- }
-function getInputHeight()
+function getInputWidth()
 {
-    let h=document.getElementById('Triangle-h');
-    let height=h.value;
-    height=parseFloat(height);
-    // if(isNaN(height)) {
-    //     alert("please insert positive integer");
-    //     return 0;
+    let w=document.getElementById('width');
+    let width=w.value;
+    width=parseFloat(width);
+    if(isNaN(width)) {
+        alert("please insert positive integer");
+        return 0;
 
-    // }
-    //  else {
+    }
+     else {
         
-    //     if(height<=0) {
-    //         alert("please insert positive integer");
-    //         return 0;
-    //     }
-    //     else return height;
-    //  }
-    let check=inputValidation(base);
-        if (check===false) return 0;
-        else return height;
+        if(width<=0) {
+            alert("please insert positive integer");
+            return 0;
+        }
+        else return width;
+     }
+}
+function getInputLength()
+{
+    let l=document.getElementById('length');
+    let length=l.value;
+    length=parseFloat(length);
+    if(isNaN(length)) {
+        alert("please insert positive integer");
+        return 0;
+
+    }
+     else {
+        
+        if(length<=0) {
+            alert("please insert positive integer");
+            return 0;
+        }
+        else return length;
+     }
 }

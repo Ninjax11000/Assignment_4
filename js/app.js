@@ -15,3 +15,16 @@ document.getElementById('CalPentagon').addEventListener('click',function(){
     createList('Triangle', result);
 
 })
+document.getElementById('CalRectangle').addEventListener('click',function(){
+    let w=getInputWidth();
+    let l=getInputLength();
+    const result=rectangleParelleogram(w,l);
+    createList('Rectangle', result);
+
+})
+document.getElementById('CalPentagon').addEventListener('click',function(){
+    const result=triangleRombusPentagon(6,10);
+    createList('Triangle', result);
+
+})
+
