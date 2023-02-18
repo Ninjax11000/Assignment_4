@@ -1,11 +1,11 @@
-function triangleRombusPentagon(b,h)
+function triangleRombusPentagon(base,height)
 {
-    return 0.5*b*h;
+    return 0.5*base*height;
 }
 
-function rectangleParelleogram(w,l)
+function rectangleParelleogram(width,length)
 {
-    return w*l;
+    return width*length;
 }
 
 function ellipse(a,b)
