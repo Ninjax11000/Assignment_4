@@ -40,9 +40,28 @@ function getInputBase()
      }
 }
 
+function getInputHeight()
+{
+    let h=document.getElementById('Triangle-h');
+    let height=h.value;
+    height=parseFloat(height);
+    if(isNaN(height)) {
+        alert("please insert positive integer");
+        return 0;
+
+    }
+     else {
+        
+        if(height<=0) {
+            alert("please insert positive integer");
+            return 0;
+        }
+        else return height;
+     }
+}
 function getInputWidth()
 {
-    let w=document.getElementById('width');
+    let w=document.getElementById('Triangle-h');
     let width=w.value;
     width=parseFloat(width);
     if(isNaN(width)) {
@@ -61,7 +80,7 @@ function getInputWidth()
 }
 function getInputLength()
 {
-    let l=document.getElementById('length');
+    let l=document.getElementById('Triangle-h');
     let length=l.value;
     length=parseFloat(length);
     if(isNaN(length)) {
@@ -78,3 +97,4 @@ function getInputLength()
         else return length;
      }
 }
+
