@@ -22,9 +22,9 @@ document.getElementById('CalRectangle').addEventListener('click',function(){
     createList('Rectangle', result);
 
 })
-document.getElementById('CalPentagon').addEventListener('click',function(){
-    const result=triangleRombusPentagon(6,10);
-    createList('Triangle', result);
+document.getElementById('Calparallelogram').addEventListener('click',function(){
+    const result=rectangleParelleogram(10,12);
+    createList('Parallelogram', result);
 
 })
 
