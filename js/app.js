@@ -32,4 +32,8 @@ document.getElementById('CalEllipse').addEventListener('click',function(){
     createList('Ellipse', result);
 
 })
+document.getElementById('blog').addEventListener('click',function(){
+    window.location.href='blog.html';
+
+})
 
