@@ -8,7 +8,10 @@ function rectangleParelleogram(w,l)
     return w*l;
 }
 
-
+function ellipse(a,b)
+{
+    return Math.PI*a*b;
+}
 
 function createList(name,val)
 {

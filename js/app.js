@@ -27,4 +27,9 @@ document.getElementById('Calparallelogram').addEventListener('click',function(){
     createList('Parallelogram', result);
 
 })
+document.getElementById('Calparallelogram').addEventListener('click',function(){
+    const result=ellipse(10,4);
+    createList('Ellipse', result);
+
+})
 
