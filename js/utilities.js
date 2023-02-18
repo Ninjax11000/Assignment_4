@@ -10,7 +10,9 @@ function rectangleParelleogram(w,l)
 
 function ellipse(a,b)
 {
-    return Math.PI*a*b;
+    let val= Math.PI*a*b;
+    val=val.toFixed(2);
+    return val;
 }
 
 function createList(name,val)
@@ -27,7 +29,7 @@ function getInputBase()
     let b=document.getElementById('Triangle-b');
     let base=b.value;
     console.log(base);
-    base=parseFloat(base);
+    base=parseFloat(base).toFixed(2);
     if(isNaN(base)) {
         alert("please insert positive integer");
         return 0;
@@ -47,7 +49,7 @@ function getInputHeight()
 {
     let h=document.getElementById('Triangle-h');
     let height=h.value;
-    height=parseFloat(height);
+    height=parseFloat(height).toFixed(2);
     if(isNaN(height)) {
         alert("please insert positive integer");
         return 0;
@@ -66,7 +68,7 @@ function getInputWidth()
 {
     let w=document.getElementById('Triangle-h');
     let width=w.value;
-    width=parseFloat(width);
+    width=parseFloat(width).toFixed(2);
     if(isNaN(width)) {
         alert("please insert positive integer");
         return 0;
@@ -85,7 +87,7 @@ function getInputLength()
 {
     let l=document.getElementById('Triangle-h');
     let length=l.value;
-    length=parseFloat(length);
+    length=parseFloat(length).toFixed(2);
     if(isNaN(length)) {
         alert("please insert positive integer");
         return 0;
