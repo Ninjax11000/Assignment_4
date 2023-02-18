@@ -37,3 +37,17 @@ document.getElementById('blog').addEventListener('click',function(){
 
 })
 
+let coloring1st= document.getElementById('1st-card');
+changeColor(coloring1st);
+let coloring2nd= document.getElementById('2nd-card');
+changeColor(coloring2nd);
+let coloring3rd= document.getElementById('3rd-card');
+changeColor(coloring3rd);
+let coloring4th= document.getElementById('4th-card');
+changeColor(coloring4th);
+let coloring5th= document.getElementById('5th-card');
+changeColor(coloring5th);
+let coloring6th= document.getElementById('6th-card');
+changeColor(coloring6th);
+
+   
