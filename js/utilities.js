@@ -1,11 +1,15 @@
 function triangleRombusPentagon(base,height)
 {
-    return 0.5*base*height;
+    let val=0.5*base*height;
+    val=val.toFixed(2);
+    return val;
 }
 
 function rectangleParelleogram(width,length)
 {
-    return width*length;
+    let val=width*length;
+    val=val.toFixed(2);
+    return val;
 }
 
 function ellipse(a,b)
@@ -29,7 +33,7 @@ function getInputBase()
     let b=document.getElementById('Triangle-b');
     let base=b.value;
     console.log(base);
-    base=parseFloat(base).toFixed(2);
+    base=parseFloat(base);
     if(isNaN(base)) {
         alert("please insert positive integer");
         return 0;
@@ -49,7 +53,7 @@ function getInputHeight()
 {
     let h=document.getElementById('Triangle-h');
     let height=h.value;
-    height=parseFloat(height).toFixed(2);
+    height=parseFloat(height);
     if(isNaN(height)) {
         alert("please insert positive integer");
         return 0;
@@ -66,9 +70,9 @@ function getInputHeight()
 }
 function getInputWidth()
 {
-    let w=document.getElementById('Triangle-h');
+    let w=document.getElementById('width');
     let width=w.value;
-    width=parseFloat(width).toFixed(2);
+    width=parseFloat(width);
     if(isNaN(width)) {
         alert("please insert positive integer");
         return 0;
@@ -85,9 +89,9 @@ function getInputWidth()
 }
 function getInputLength()
 {
-    let l=document.getElementById('Triangle-h');
+    let l=document.getElementById('length');
     let length=l.value;
-    length=parseFloat(length).toFixed(2);
+    length=parseFloat(length);
     if(isNaN(length)) {
         alert("please insert positive integer");
         return 0;
