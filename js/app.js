@@ -7,12 +7,12 @@ document.getElementById('CalTriangle').addEventListener('click',function(){
 })
 document.getElementById('CalRombus').addEventListener('click',function(){
     const result=triangleRombusPentagon(16,8);
-    createList('Triangle', result);
+    createList('Rombus', result);
 
 })
 document.getElementById('CalPentagon').addEventListener('click',function(){
     const result=triangleRombusPentagon(6,10);
-    createList('Triangle', result);
+    createList('Pentagon', result);
 
 })
 document.getElementById('CalRectangle').addEventListener('click',function(){
